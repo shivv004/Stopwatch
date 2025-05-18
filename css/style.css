@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .clock-container{
+    position: relative;
+}
+
+.main-container .watch-face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 155px;
+    left: 112px;
+    background-color: #d8d8d8;
+    box-shadow: 0 0 10px 4px #616161;
+    border-radius: 50%;
+    height: 290px;
+    width: 290px;
+}
+
+.main-container .watch-face .timer-counter{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    padding: 7px 20px;
+    box-shadow: 0 0 4px 1px #616161;
+    background-color: #5e5e5e;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.main-container .watch-face .timer-counter .seperator {
+    transform: translateY(-6px);
+    font-weight: 500 !important;
+}
+
+.options :is(*){
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.options :is(*:hover){
+    opacity: 0.15;
+    box-shadow: 0 0 2px 1px #000;
+}
+
+.options .reset-toggle{
+    top: 104px;
+    left: 127px;
+    width: 30px;
+    height: 51px;
+    transform: rotate(146deg);
+}
+
+.options .start-toggle{
+    top: 43px;
+    left: 237px;
+    width: 39px;
+    height: 76px;
+}
+
+.options .stop-toggle{
+    top: 110px;
+    left: 353px;
+    width: 27px;
+    height: 42px;
+    transform: rotate(33deg);
+}
+
+
+
